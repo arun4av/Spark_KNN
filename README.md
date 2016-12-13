@@ -49,6 +49,7 @@ output.show()
 
 ```scala
 //read in raw label and features
+// Treshold refers to the number of in-degrees for every pointi.e., to ho wmany other points does a point occur as a k-nearest neighbour
 val knn = new KNNOutlier()
              .setK(10)
              .setTreshold(3)
